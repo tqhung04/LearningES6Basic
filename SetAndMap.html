@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SET</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Map
+		let map = new Map();
+		map.set('hero1', 'Slack');
+		map.set('hero2', 'Roshan');
+		console.log(map.get('hero1'));
+		console.log(map.has('hero1'));
+		console.log(map.has('hero2'));
+		let mapPerson = new Map()
+		.set('person1', 'HidolPla')
+		.set('person1', 'HidolPla')
+		.set('person2', 'Saori')
+		console.log(mapPerson)
+
+		let mapAnimal = new Map([
+			['animal1', 'Elephen', 'Kanguru'],
+			['animal2', 'Chicken'],
+			['animal3', 'Tiger'],
+		])
+		// mapAnimal.clear();
+		console.log(mapAnimal);
+		for (let animal of mapAnimal.values()) {
+			console.log(animal);
+		}
+		for (let animal of mapAnimal) {
+			console.log(animal[0] + ' : ' + animal[1])
+			// console.log(animal[1])
+		}
+
+		let carMap = new Map();
+		const car = ['car1', 'car2', 'car3'];
+		carMap.set(car, 'Toyota');
+		console.log(carMap.get(car))
+
+		// Set
+		let set = new Set();
+		set.add('String');
+		const pi = 3.14;
+		set.add(pi);
+		set.add(3.14);
+		set.add(3.144);
+		set.delete(3.144);
+		set.add(['Slack', 'Roshan']).add(['Slack', 'Roshan']);
+		console.log(set);
+		console.log(set.size);
+		for ( let x of set ) {
+			console.log(x);
+		}
+
+		// Convert to array
+		let setArray = [...set];
+		console.log(set);
+		console.log(setArray[2][0]); // => Slack
+
+		let setNum = new Set([1, 2, 3]);
+		setNum = new Set([...setNum].map(x => x * 2));
+		console.log(setNum)
+
+		let number = [1,2,3,4,5,6];
+		// get even number
+		// let even = number.filter(x => (x % 2) == 0);
+		
+		console.log(even)
+		// get odd number
+
+
+
+	</script>
+</body>
+</html>

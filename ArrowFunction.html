@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		'use strict';
+
+		// Show message to screen with old js version
+		function showMes (name, mes) {
+			console.log('Hi everybody!, Im ' + name + '. ' + mes);
+		}
+		showMes('HidolPla', 'I love you');
+
+		// Show message to screnn with ES6: Arrow function 
+		var message = (name, mes) => console.log('Hi everybody!, Im ' + name + '. ' + mes);
+		var funOneParam = name => console.log('My name is ' + name);
+		var funNoParam = () => console.log('Function Without Params');
+		message('Saori', 'I love u too.')
+		funOneParam('Hidol');
+		funNoParam();
+
+		// Example
+		var array = ['Blob', 'Slack', 'Nevermore'];
+		var object = [
+			{
+				id: 1,
+				name: 'Seven'
+			},
+			{
+				id: 2,
+				name: 'Viper'
+			},
+			{
+				id: 3,
+				name: 'Puck'
+			}
+		]
+		array.map(function(val, key) {
+			console.log( val.toUpperCase() );
+		})
+		object.map(function(val, key) {
+			console.log( val.name.toUpperCase() );
+		})
+		// With ES6
+		array.map((val, key) => {
+			console.log( val.toUpperCase() );
+		})
+		object.map((val, key) => console.log(val.name.toUpperCase()))
+	</script>
+</body>
+</html>

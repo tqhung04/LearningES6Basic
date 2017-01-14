@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Default Parameters</title>
+</head>
+<body>
+	<script type="text/javascript">
+		'use strict';
+
+		let showMes = (name = 'SystemES6') => {
+			// name = name || 'SystemES5'; 	//=> ES5
+			return ('My name is ' + name);
+		}
+		console.log( showMes() );
+		console.log( showMes('HidolPla') );
+	</script>
+</body>
+</html>

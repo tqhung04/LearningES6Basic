@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rest Parameters</title>
+</head>
+<body>
+	<script type="text/javascript">
+		'use strict';
+
+		let showHero = (id, name, ...other) => {
+			console.log(id);
+			console.log(name);
+			console.log(other);
+		}
+
+		showHero(1, 'Slack', 'Agiliti', 'Mele', 'Ganker');
+	</script>
+</body>
+</html>

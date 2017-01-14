@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destructured Assignment</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// If array
+		let array= ['Slack', 'Lina', 'Nevermore'];
+		let [hero1, hero2, hero3] = array;
+		console.log(hero1);
+		console.log(hero2);
+		console.log(hero3);
+
+		// If string
+		let temp = 'Moonlight';
+		let[t1, t2, t3] = temp;
+		console.log(t1);	// => M
+		console.log(t2);	// => o
+		console.log(t3);	// => o
+
+		// If objects
+		let objects = [
+			{
+				id: 1,
+				name: 'Roshan'
+			},
+			{
+				id: 2,
+				name: 'Monkey'
+			},
+			{
+				id: 3,
+				name: 'Sladar'
+			}
+		];
+		let [h1, h2, h3] = objects;
+		console.log(h1);
+		console.log(h2);
+		console.log(h3);
+
+		// If object
+		let object = {
+				id: 1,
+				name: 'IO',
+				type: 'Strong'
+			};
+		let {name: io} = object;
+		console.log(io)
+
+	</script>
+</body>
+</html>

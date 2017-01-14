@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block Scoped</title>
+</head>
+<body>
+	<script type="text/javascript">
+		'use strict';
+
+		var a = 1;
+		var b = 2;
+
+		if ( a < b ) {
+			let temp = a;
+			a = b;
+			b = temp;
+		}
+		console.log('a:' + a)
+		console.log('b:' + b)
+		console.log('temp:' + temp)
+	</script>
+</body>
+</html>
